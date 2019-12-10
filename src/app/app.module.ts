@@ -8,12 +8,16 @@ import { MatCardModule, MatButtonModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
