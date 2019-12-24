@@ -1,35 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {Component} from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import {FormBuilder, FormsModule,Form,NgForm} from '@angular/forms';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCardModule, MatButtonModule } from '@angular/material';
+import { MatCardModule,MatMenu, MatButtonModule,MatTabsModule } from '@angular/material';
 
 
-import { AppRoutingModule } from './app-routing.module';
+
+import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrationComponent } from './pages/registration/registration.component';
-import { ProfileComponent } from './pages/profile/profile.component';
-import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent,
-    ProfileComponent,
-    HomeComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
+    MatTabsModule,
     MatButtonModule
   ],
   providers: [],

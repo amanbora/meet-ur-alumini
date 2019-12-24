@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {FormBuilder, Form,NgForm} from '@angular/forms';
+import { User } from './models/user';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'meet-ur-alumini';
+  
 }

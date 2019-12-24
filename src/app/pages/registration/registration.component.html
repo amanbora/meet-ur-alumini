@@ -2,25 +2,22 @@
 <main>
     <div><h2>Registration</h2></div>
 
-    <form>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+            
             <mat-card>
                 <mat-form-field>
-                        <input matInput name="username" placeholder="Username">
+                        <input matInput class="form-control" name="username" placeholder="Username" [(ngModel)]=userModel.name>
                 </mat-form-field>
                 <br>
 
                 <mat-form-field>
-                        <input matInput name="password" placeholder="Password">
+                        <input matInput class="form-control" name="password" type="password" placeholder="Password" [(ngModel)]=userModel.password>
                 </mat-form-field>
                 <br>
 
-                <button mat-button color="primary">Log In</button>
+                <button  mat-mini-fab  color="primary">Submit</button>
                
-                <br>
-                or
-                <br>
-
-                <button mat-button color="accent">Sign Up</button>
+                
             </mat-card>
-    </form>
+    </form >
  </main>
